@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FE.Developer</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gamja+Flower&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <div class="header-container">
+          <div></div>
+          <div><span class="logo-name">FE Developer</span></div>
+          <div></div>
+        </div>
+        <div class="header-menu">
+          <ul>
+            <li><span>HTML</span></li>
+            <li><span>CSS</span></li>
+            <li><span>Java Script</span></li>
+            <li><span>React JS</span></li>
+            <li><span>Swift</span></li>
+          </ul>
+        </div>
+      </header>
+      <article>
+        <div class="article-container">
+          <section>
+          </section>
+        <section>
+          <div class="sec-header">
+            <span>프론트엔드 개발자가 되기 위해선<br> 무엇을 해야할까?</span>
+          </div>
+          <div class="sec-body">
+            <img src="img/lang.jpg" alt="">
+          </div>
+          <div class="sec-footer">
+
+
+            <span id="gocoder_typing">
+
+          </span>
+
+
+            </div>
+         </section>
+          <section>
+         </section>
+         </div>
+     </article>
+   </body>
+
+
+   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+
+  <script>
+    var typing = document.getElementById('gocoder_typing');
+
+    var typewriter = new Typewriter(typing, {
+        loop: true
+    });
+
+    typewriter.typeString('기본을 먼저 하자!')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('프레임워크를 다루기 전에')
+        .pauseFor(2500)
+        .deleteChars(13)
+        .typeString('바닐라 JS 부터 하자!')
+        .pauseFor(2500)
+        .start();
+  </script>
+</html>
